@@ -32,7 +32,7 @@ export const Section = styled.div`
     overflow-y: scroll;
     padding: 10px;
     display: flex;
-    height: 80vh;
+    height: 100%;
     width: 50%;
 `;
 
