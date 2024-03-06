@@ -9,6 +9,6 @@ export default [
         name: 'gentileza',
         category: 'economia',
         description: 'modulo com gestão das moedas gentileza.',
-        value: 5
+        value: 5.0
     },
 ]

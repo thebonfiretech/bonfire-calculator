@@ -1,5 +1,6 @@
 import { Container, Box, Value, Label, LabelContainer } from "./styles";
 import formatNumber from "../../services/formatNumber";
+import Button from "../button";
 
 const Info = ({data, goBack}) => {
 
@@ -34,6 +35,7 @@ const Info = ({data, goBack}) => {
                 <Value>
                     <p>{formatNumber(data.value)}</p>
                 </Value>
+                <Button onClick={goBack} name='VOLTAR' height={2.5}/>
             </Box>
         </Container>
     )

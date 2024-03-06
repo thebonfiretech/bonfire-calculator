@@ -3,15 +3,16 @@ import styled from 'styled-components'
 export const ButtonContainer = styled.button`
   background: ${({theme, secondary}) => secondary ? 'transparent' : theme.colors.gradient};
   color: ${({theme}) => theme.colors.text};
-  padding: ${({height}) => height}px 0;
-  width: ${({width}) => width}vw;
+  height: ${({height}) => height};
+  width: ${({width}) => width};
   text-transform: uppercase;
   box-sizing: border-box;
   transition: ease .3s;
   letter-spacing: 2px;
   position: relative;
   border-radius: 2px;
-  font-weight: 800;
+  padding: 7.5px 0;
+  font-weight: 700;
   overflow: hidden;
   cursor: pointer;
   margin: 5px;

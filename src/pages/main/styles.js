@@ -62,3 +62,52 @@ export const Module = styled.div`
         margin-left: 5px;
     }
 `;
+
+export const Input = styled.input`
+  color: ${({theme}) => theme.colors.secondaryText};
+  border: 1px solid rgba(255,255,255, 0.1);
+  background-color: #222;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  width: 80%;
+
+  &:focus {
+    border-color: ${({theme}) => theme.colors.primary};
+  }
+`;
+
+export const Value = styled.div`
+    background-color: ${({theme}) => theme.colors.background};
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: start;
+    margin: 15px 0;
+    display: flex;
+    height: auto;
+    width: 80%;
+    
+    p{
+        color: ${({theme}) => theme.colors.secondaryText};
+        font-size: 14px;
+
+    }
+`;
+
+export const Label = styled.label`
+    color: ${({theme}) => theme.colors.text};
+    font-weight: 500;
+    font-size: 15px;
+`
+
+export const LabelContainer = styled.div`
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+`
