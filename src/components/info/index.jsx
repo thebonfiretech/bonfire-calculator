@@ -1,6 +1,5 @@
-import react from "react";
 import { Container, Box, Value, Label, LabelContainer } from "./styles";
-import modules from "../../assets/modules";
+import formatNumber from "../../services/formatNumber";
 
 const Info = ({data, goBack}) => {
 
@@ -33,7 +32,7 @@ const Info = ({data, goBack}) => {
                    <Label>Valor por acesso:</Label>
                 </LabelContainer>
                 <Value>
-                    <p>{data.value}</p>
+                    <p>{formatNumber(data.value)}</p>
                 </Value>
             </Box>
         </Container>
