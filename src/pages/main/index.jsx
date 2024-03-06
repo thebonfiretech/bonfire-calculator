@@ -2,6 +2,7 @@ import { AiOutlineBorder, AiOutlineCheckSquare, AiOutlineEye } from "react-icons
 import React, { useState } from 'react';
 
 import { Container, Box, Section, Module } from './styles';
+import Info from "../../components/info";
 import modules from '../../assets/modules';
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
         setSelects(hasMod != -1 ? selects.filter(x => x.name != mod.name) : [...selects, mod ]);
     };
 
+    if (view) return <Info data={view} goBack={() => setView(null)}/>
     return (
         <Container>
             <Box>
