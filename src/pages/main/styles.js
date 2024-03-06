@@ -22,16 +22,17 @@ export const Box = styled.div`
     border-radius: 5px;
     display: flex;
     padding: 20px;
-    height: 70vh;
+    height: 80vh;
     width: 60vw;
-`
+    `
 
 export const Section = styled.div`
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
     padding: 10px;
     display: flex;
-    height: 100%;
+    height: 80vh;
     width: 50%;
 `;
 

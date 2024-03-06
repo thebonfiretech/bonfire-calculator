@@ -18,7 +18,7 @@ body {
 
 }
 ::-webkit-scrollbar-track {
-    background-color: #363636;
+    background-color:transparent;
 }
 ::-webkit-scrollbar {
     width: 6px;
@@ -26,7 +26,7 @@ body {
    
 }
 ::-webkit-scrollbar-thumb {
-    background: ${({theme}) => theme.colors.primary};
+    background: rgba(54, 54, 54, 0.2);
     border-radius: 6px;
 }
 `
